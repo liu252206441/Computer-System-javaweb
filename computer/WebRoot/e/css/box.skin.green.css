@@ -1,0 +1,60 @@
+/**主题框颜色*/
+.box .title {
+    border-bottom: 3px solid #04a219 !important;
+    color: #04a219;
+    background-color:White;
+
+}
+/*标题*/
+.box .title strong
+{
+	color:#04a219;
+}
+.box .content
+{
+	background-color:White;
+}
+
+.show-info .title {
+    border-bottom: 2px solid #f70 !important;
+    color: #f70 !important;
+}
+.show-info .title strong {
+    color: #f70 !important ;
+}
+.page-title {
+    background-color: #f6f6f6;
+    border: 1px solid #d9e3e5;
+    color: #f70 !important;
+}
+
+.forumlist h3,.forumlist .block-title {
+   
+   background-color: #059d17 !important;
+   
+}
+
+.btn-default{
+    background-color: #059d17 !important;
+    color: #fff;
+   
+}
+
+#side-menu .current a, #side-menu .current a:hover {
+    
+    color: #fff;
+    background: #059d17 !important;
+}
+
+.sidebar {
+    border-color: #04a219 #DDDDDD #DDDDDD;
+    border-style: solid;
+    border-width: 3px 1px 1px;
+}
+
+.catebox .title {
+    border-bottom: #ddd 1px solid;
+   
+    border-top: #04a219 2px solid;
+    font-weight: bold;
+}

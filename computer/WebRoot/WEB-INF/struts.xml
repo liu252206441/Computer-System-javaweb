@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	
+   
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.action.extension" value="do, action"/> 
+    <constant name="struts.multipart.handler" value="myRequestParser" />
+    
+    <bean type="org.apache.struts2.dispatcher.multipart.MultiPartRequest"
+     name="myRequestParser" class="com.daowen.util.RequestParseWrapper"
+     scope="default" optional="true" />
+    <package name="admin" extends="struts-default" namespace="/admin">
+       
+        <action name="usersmanager"   class="com.daowen.action.UsersAction">
+        </action>
+         <action name="login"   class="com.daowen.action.AdminLogin">
+         </action>
+       
+         <action name="uploadmanager"   class="com.daowen.action.UploadAction">
+         </action>
+        
+       
+     
+       <action name="friendlinkmanager" class="com.daowen.action.FriendlinkAction">
+        </action>
+  
+       <action name="noticemanager"  class="com.daowen.action.NoticeAction">
+     
+       </action>
+       <action  name="jiaodiantumanager" class="com.daowen.action.JiaodiantuAction">
+       </action>
+	     <action name="huiyuanmanager" class="com.daowen.action.HuiyuanAction">
+	     </action>
+	      <action name="leavewordmanager" class="com.daowen.action.LeavewordAction">
+	     </action>
+	     <action name="commentmanager" class="com.daowen.action.CommentAction">
+	     </action>
+	   
+	     <action name="sysconfigmanager" class="com.daowen.action.SysconfigAction">
+	     </action>
+	     <action name="secquestionmanager" class="com.daowen.action.SecquestionAction">
+	     </action>
+	    
+	     <action name="indexcolumnsmanager" class="com.daowen.action.IndexcolumnsAction">
+         </action>
+         <action name="sitenavmanager" class="com.daowen.action.SitenavAction">
+         </action>
+       
+        <action name="minganmanager" class="com.daowen.action.MinganAction">
+         </action>
+         
+         
+         <action name="shangpinmanager"  class="com.daowen.action.ShangpinAction">
+         </action>
+     
+        <action name="spcategorymanager" class="com.daowen.action.SpcategoryAction">
+        </action>
+        <action name="dingdanmanager" class="com.daowen.action.DingdanAction">
+        </action>
+        
+        <action name="shoucangmanager" class="com.daowen.action.ShoucangAction">
+        </action>
+          <action name="xinximanager"   class="com.daowen.action.XinxiAction">
+        </action>
+     
+        <action name="lanmumanager" class="com.daowen.action.LanmuAction">
+     
+        </action>
+         
+        
+    </package>
+
+</struts>
